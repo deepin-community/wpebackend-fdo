@@ -1,0 +1,129 @@
+wpebackend-fdo (1.12.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/libwpebackend-fdo-1.0-1.symbols:
+    + Update symbols.
+  * debian/control:
+    + Bump required version of libwpe-1.0-dev.
+    + Update Standards-Version to 4.6.0.1 (no changes).
+
+ -- Alberto Garcia <berto@igalia.com>  Tue, 19 Oct 2021 10:45:40 +0200
+
+wpebackend-fdo (1.10.0-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Alberto Garcia <berto@igalia.com>  Wed, 16 Jun 2021 11:29:41 +0200
+
+wpebackend-fdo (1.10.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * debian/watch:
+    + Fix regular expression to scan stable releases.
+  * debian/control:
+    + Replace build dependency on cmake with meson.
+    + Remove build dependency on libegl1-mesa-dev.
+  * debian/libwpebackend-fdo-1.0-1.symbols:
+    + Update symbols.
+  * debian/copyright:
+    + Remove deleted files.
+
+ -- Alberto Garcia <berto@igalia.com>  Mon, 07 Jun 2021 23:57:03 +0200
+
+wpebackend-fdo (1.8.4-1) experimental; urgency=medium
+
+  * New upstream release.
+  * debian/libwpebackend-fdo-1.0-1.symbols:
+    + Update symbols.
+
+ -- Alberto Garcia <berto@igalia.com>  Wed, 12 May 2021 21:23:59 +0200
+
+wpebackend-fdo (1.8.3-1) experimental; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Update Standards-Version to 4.5.1 (no changes).
+
+ -- Alberto Garcia <berto@igalia.com>  Wed, 31 Mar 2021 01:08:01 +0200
+
+wpebackend-fdo (1.8.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/copyright:
+    + Update copyright years.
+
+ -- Alberto Garcia <berto@igalia.com>  Thu, 18 Mar 2021 17:05:26 +0100
+
+wpebackend-fdo (1.8.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Explain how WebKitGTK uses this package.
+  * debian/watch:
+    + Track stable releases only.
+    + Set version to 4 (fixes older-debian-watch-file-standard)
+
+ -- Alberto Garcia <berto@igalia.com>  Wed, 10 Mar 2021 14:59:13 +0100
+
+wpebackend-fdo (1.8.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Add build dependency on libepoxy-dev.
+  * debian/libwpebackend-fdo-1.0-1.symbols:
+    + Update symbols.
+  * debian/libwpebackend-fdo-1.0-dev.lintian-overrides:
+    + Delete this file, pkg-config-references-unknown-shared-library was
+      removed in lintian 2.57.0.
+  * debian/libwpebackend-fdo-1.0-1.lintian-overrides:
+    + Rename non-dev-pkg-with-shlib-symlink to
+      link-to-shared-library-in-wrong-package
+  * debian/copyright:
+    + Remove obsolete entries.
+
+ -- Alberto Garcia <berto@igalia.com>  Sat, 12 Sep 2020 23:48:20 +0200
+
+wpebackend-fdo (1.6.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/libwpebackend-fdo-1.0-1.symbols:
+    + Update symbols.
+
+ -- Alberto Garcia <berto@igalia.com>  Tue, 26 May 2020 16:27:53 +0200
+
+wpebackend-fdo (1.6.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Set the debhelper compatibility level to 12:
+    + Get rid of debian/compat.
+    + Add build dependency on debhelper-compat.
+  * debian/control:
+    + Add build dependency on libwayland-dev (Closes: #952252).
+    + Add Rules-Requires-Root: no.
+    + Update Standards-Version to 4.5.0 (no changes).
+    + Require libwpe-1.0-dev >= 1.5.90.
+  * debian/copyright:
+    + Update copyright years.
+  * debian/libwpebackend-fdo-1.0-1.symbols:
+    + Update symbols.
+  * Add upstream metadata file.
+
+ -- Alberto Garcia <berto@igalia.com>  Thu, 12 Mar 2020 14:51:33 +0100
+
+wpebackend-fdo (1.4.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Update Standards-Version to 4.4.1 (no changes).
+  * debian/libwpebackend-fdo-1.0-1.symbols:
+    + Update symbols.
+  * debian/libwpebackend-fdo-1.0-1.lintian-overrides:
+    + Update override so it's independent from the library version.
+
+ -- Alberto Garcia <berto@igalia.com>  Wed, 13 Nov 2019 17:57:25 +0200
+
+wpebackend-fdo (1.3.0-1) experimental; urgency=medium
+
+  * Initial release (Closes: #930117)
+
+ -- Alberto Garcia <berto@igalia.com>  Wed, 14 Aug 2019 14:01:13 +0300

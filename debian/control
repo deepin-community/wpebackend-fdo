@@ -1,0 +1,56 @@
+Source: wpebackend-fdo
+Section: libs
+Priority: optional
+Maintainer: Debian WebKit Maintainers <pkg-webkit-maintainers@lists.alioth.debian.org>
+Uploaders: Alberto Garcia <berto@igalia.com>
+Build-Depends: debhelper-compat (= 12),
+               meson,
+               libepoxy-dev,
+               libglib2.0-dev,
+               libwayland-dev,
+               libwpe-1.0-dev (>= 1.6.0)
+Standards-Version: 4.6.0.1
+Rules-Requires-Root: no
+Vcs-Browser: https://salsa.debian.org/webkit-team/wpebackend-fdo
+Vcs-Git: https://salsa.debian.org/webkit-team/wpebackend-fdo.git
+Homepage: https://wpewebkit.org/
+
+Package: libwpebackend-fdo-1.0-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libwpebackend-fdo-1.0-1 (= ${binary:Version}),
+         libwpe-1.0-dev,
+         ${shlibs:Depends},
+         ${misc:Depends}
+Description: WPE backend for FreeDesktop.org - Development files
+ WPE WebKit is a port of the WebKit browser engine optimized for
+ embedded devices. The code itself is hardware-agnostic, and the
+ platform-specific bits are implemented in backends.
+ .
+ wpebackend-fdo provides a reference WPE backend implementation using
+ FreeDesktop.org technologies (Wayland protocol and the Wayland EGL
+ platform) to enable integration into the WPE WebKit process model.
+ .
+ In addition to WPE WebKit, wpebackend-fdo is also used by WebKitGTK
+ to implement hardware-accelerated rendering under Wayland.
+ .
+ This package contains the development files.
+
+Package: libwpebackend-fdo-1.0-1
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: WPE backend for FreeDesktop.org
+ WPE WebKit is a port of the WebKit browser engine optimized for
+ embedded devices. The code itself is hardware-agnostic, and the
+ platform-specific bits are implemented in backends.
+ .
+ wpebackend-fdo provides a reference WPE backend implementation using
+ FreeDesktop.org technologies (Wayland protocol and the Wayland EGL
+ platform) to enable integration into the WPE WebKit process model.
+ .
+ In addition to WPE WebKit, wpebackend-fdo is also used by WebKitGTK
+ to implement hardware-accelerated rendering under Wayland.
+ .
+ This package contains the shared libraries.
