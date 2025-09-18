@@ -4,7 +4,6 @@ libWPEBackend-fdo-1.0.so.1 libwpebackend-fdo-1.0-1 #MINVER#
  (optional)_ZNSt17_Function_handlerIFvjEPS0_E9_M_invokeERKSt9_Any_dataOj@Base 1.8.0
  (optional)_ZNSt17_Function_handlerIFvjiPKciEPS2_E10_M_managerERSt9_Any_dataRKS5_St18_Manager_operation@Base 1.8.0
  (optional)_ZNSt17_Function_handlerIFvjiPKciEPS2_E9_M_invokeERKSt9_Any_dataOjOiOS1_S9_@Base 1.8.0
- (optional)_ZNSt6vectorIjSaIjEE17_M_realloc_insertIJRKjEEEvN9__gnu_cxx17__normal_iteratorIPjS1_EEDpOT_@Base 1.8.4
  _wpe_loader_interface@Base 1.6.0
  wpe_audio_packet_export_release@Base 1.8.0
  wpe_audio_register_receiver@Base 1.8.0
