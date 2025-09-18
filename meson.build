@@ -1,5 +1,5 @@
 project('wpebackend-fdo', ['c', 'cpp'],
-	meson_version: '>=0.49',
+	meson_version: '>=0.52.1',
 	default_options: [
 		'b_ndebug=if-release',
 		'c_std=c99',
@@ -8,7 +8,7 @@ project('wpebackend-fdo', ['c', 'cpp'],
 		'cpp_std=c++11',
 	],
 	license: 'BSD-2-Clause',
-	version: run_command(join_paths('scripts', 'version.py')).stdout().strip(),
+	version: run_command(join_paths('scripts', 'version.py'), check: true).stdout().strip(),
 )
 
 # This refers to the API level provided. This is modified only with major,
@@ -23,7 +23,7 @@ api_version = '1.0'
 # - If binary compatibility has been broken (eg removed or changed interfaces)
 #   change to [C+1, 0, 0]
 # - If the interface is the same as the previous version, use [C, R+1, A].
-soversion = [9, 0, 8]
+soversion = [11, 1, 10]
 
 # Mangle [C, R, A] into an actual usable *soversion*.
 soversion_major = soversion[0] - soversion[2]  # Current-Age
@@ -109,10 +109,7 @@ endif
 
 wayland_scanner = find_program(wayland_scanner_candidates, native: true)
 
-r = run_command(wayland_scanner, '--version')
-assert(r.returncode() == 0,
-	'''Cannot execute wayland-scanner:
-	''' + r.stderr())
+r = run_command(wayland_scanner, '--version', check: true)
 wayland_scanner_version = r.stderr().split()
 if not (wayland_scanner_version.length() == 2)
 	wayland_scanner_version = r.stdout().split()
@@ -368,8 +365,6 @@ if get_option('build_docs')
 		c_smart_index: true,
 		c_sources: api_headers,
 		c_include_directories: ['include', meson.current_build_dir()],
-		# The space here is relevant, see
-		# https://github.com/mesonbuild/meson/issues/5800#issuecomment-552198354
-		extra_c_flags: [' -DWPE_FDO_COMPILATION=1'],
+		extra_c_flags: ['-DWPE_FDO_COMPILATION=1'],
 	)
 endif

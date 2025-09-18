@@ -3,7 +3,7 @@ Upstream-Name: wpebackend-fdo
 Source: https://wpewebkit.org/releases/
 
 Files: *
-Copyright: © 2017-2021 Igalia, S.L.
+Copyright: © 2017-2025 Igalia, S.L.
 License: BSD-2-clause
 
 Files: src/bridge/wpe-bridge.xml
@@ -16,7 +16,7 @@ Copyright: © 2011 Intel Corporation
 License: Expat
 
 Files: debian/*
-Copyright: © 2021 Alberto Garcia <berto@igalia.com>
+Copyright: © 2021-2025 Alberto Garcia <berto@igalia.com>
 License: BSD-2-clause
 
 License: BSD-2-clause

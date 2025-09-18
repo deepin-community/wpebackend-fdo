@@ -1,3 +1,65 @@
+wpebackend-fdo (1.16.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/copyright:
+    - Update copyright years.
+  * debian/libwpebackend-fdo-1.0-1.symbols:
+    - Update symbols.
+  * debian/upstream/signing-key.asc:
+    - Remove obsolete key 0xF3D322D0EC4582C3.
+
+ -- Alberto Garcia <berto@igalia.com>  Thu, 13 Mar 2025 11:02:47 +0100
+
+wpebackend-fdo (1.14.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    - Remove references to WebKitGTK since it no longer uses the WPE
+      backend.
+    - Update Standards-Version to 4.7.0 (no changes).
+  * debian/copyright:
+    - Update copyright years.
+  * debian/rules:
+    - Stop overriding dh_missing since debhelper compat level 13 already
+      defaults to --fail-missing.
+
+ -- Alberto Garcia <berto@igalia.com>  Fri, 13 Sep 2024 23:47:26 +0200
+
+wpebackend-fdo (1.14.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Alberto Garcia <berto@igalia.com>  Wed, 22 Mar 2023 00:17:47 +0100
+
+wpebackend-fdo (1.14.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/copyright:
+    - Update copyright years.
+  * debian/control:
+    - Update Standards-Version to 4.6.2 (no changes).
+
+ -- Alberto Garcia <berto@igalia.com>  Sat, 04 Mar 2023 23:48:40 +0100
+
+wpebackend-fdo (1.14.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Alberto Garcia <berto@igalia.com>  Tue, 20 Sep 2022 11:38:10 +0200
+
+wpebackend-fdo (1.12.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/copyright:
+    - Update copyright years.
+  * debian/control:
+    - Set the debhelper compatibility level to 13.
+    - Update Standards-Version to 4.6.1.0 (no changes).
+  * debian/libwpebackend-fdo-1.0-1.lintian-overrides:
+    - Update link-to-shared-library-in-wrong-package override.
+
+ -- Alberto Garcia <berto@igalia.com>  Wed, 10 Aug 2022 16:17:21 +0200
+
 wpebackend-fdo (1.12.0-1) unstable; urgency=medium
 
   * New upstream release.
